@@ -76,7 +76,7 @@ private:
 	std::string name;
 };
 
-void main2() {
+void main() {
 	IEventChannel* eventChannel = new EventChannel();
 	IPublisher* publisherA = new Publisher("topic_A", eventChannel);
 	IPublisher* publisherB = new Publisher("topic_B", eventChannel);
@@ -89,8 +89,8 @@ void main2() {
 
 	publisherA->publish("Hello from publisherA");
 	// Subscriber Subscriber1 notify: Hello from publisherA
+	// Subscriber Subscriber2 notify: Hello from publisherA
 
 	publisherB->publish("Hello from publisherB");
-	//Subscriber Subscriber2 notify: Hello from publisherA
-	//Subscriber Subscriber2 notify: Hello from publisherB
+	// Subscriber Subscriber2 notify: Hello from publisherB
 }

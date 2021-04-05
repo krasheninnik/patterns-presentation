@@ -7,7 +7,7 @@ void threadFunction(int i) {
 	// do complex calculations
 }
 
-void main() {
+void main3() {
 	std::vector<std::thread> vHardcodedAmountThreads;
 	std::vector<std::thread> vMaxAmountThreads;
 
